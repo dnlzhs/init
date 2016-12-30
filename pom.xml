@@ -11,9 +11,12 @@
   </parent>
 
   <build>
-    <resources>
-        <resource>/src/main/resources</resource>
-    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
   </build>
 
   <dependencies>
@@ -39,13 +42,4 @@
       <artifactId>spring-boot-starter-freemarker</artifactId>
   </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 </project>
